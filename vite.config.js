@@ -25,6 +25,7 @@ export default defineConfig({
       }
     }
   ],
+  base: '/H265webjs-test/',
   build: {
     outDir: 'docs',
     rollupOptions: {
