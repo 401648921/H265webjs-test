@@ -10,13 +10,9 @@ export default defineConfig({
       name: 'copy-dist-files',
       writeBundle() {
         const distDir = resolve(__dirname, 'dist');
-        const outputDir = resolve(__dirname, 'docs/dist');
-
+        const outputDir = resolve(__dirname, 'docs');
+        
         if (existsSync(distDir)) {
-          if (!existsSync(outputDir)) {
-            mkdirSync(outputDir, { recursive: true });
-          }
-
           const files = ['missile.js', 'h265webjs-v20221106.js', 'missile-v20221120.wasm'];
           files.forEach(file => {
             const srcPath = resolve(distDir, file);
@@ -30,6 +26,13 @@ export default defineConfig({
     }
   ],
   build: {
-    outDir: 'docs'
+    outDir: 'docs',
+    rollupOptions: {
+      output: {
+        entryFileNames: '[name].js',
+        chunkFileNames: '[name].js',
+        assetFileNames: '[name].[ext]'
+      }
+    }
   }
 });
