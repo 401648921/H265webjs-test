@@ -136,8 +136,8 @@ import { Player } from "./executor";
 export default {
   data() {
     return {
-      videoUrl: "/Big_Buck_Bunny_1080_10s_1MB.webm",
-        url: "/Big_Buck_Bunny_1080_10s_1MB.webm",
+      videoUrl: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.webm",
+        url: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.webm",
       instance: null,
       isPlaying: false,
       currentTime: "00:00:00",
@@ -154,18 +154,18 @@ export default {
       comparisonCurrentTime: "00:00:00",
       comparisonTotalTime: "00:00:00",
       videoFormats: {
-        webm: "/Big_Buck_Bunny_1080_10s_1MB.webm",
-        mp4: "/Big_Buck_Bunny_1080_10s_1MB.mp4",
-        h265: "/Big_Buck_Bunny_1080_10s_1MB_h265.mp4",
-        avi: "/Big_Buck_Bunny_1080_10s_1MB.avi",
-        mkv: "/Big_Buck_Bunny_1080_10s_1MB.mkv",
-        mov: "/Big_Buck_Bunny_1080_10s_1MB.mov",
-        flv: "/Big_Buck_Bunny_1080_10s_1MB.flv",
-        "3gp": "/Big_Buck_Bunny_1080_10s_1MB.3gp",
-        wmv: "/Big_Buck_Bunny_1080_10s_1MB.wmv",
-        ts: "/Big_Buck_Bunny_1080_10s_1MB.ts",
-        ogv: "/Big_Buck_Bunny_1080_10s_1MB.ogv",
-        m4v: "/Big_Buck_Bunny_1080_10s_1MB.m4v"
+        webm: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.webm",
+        mp4: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.mp4",
+        h265: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB_h265.mp4",
+        avi: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.avi",
+        mkv: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.mkv",
+        mov: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.mov",
+        flv: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.flv",
+        "3gp": "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.3gp",
+        wmv: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.wmv",
+        ts: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.ts",
+        ogv: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.ogv",
+        m4v: "/H265webjs-test/Big_Buck_Bunny_1080_10s_1MB.m4v"
       },
     };
   },
