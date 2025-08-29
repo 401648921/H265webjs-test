@@ -10,7 +10,7 @@ export default defineConfig({
       name: 'copy-dist-files',
       writeBundle() {
         const distDir = resolve(__dirname, 'dist');
-        const outputDir = resolve(__dirname, 'output/dist');
+        const outputDir = resolve(__dirname, 'docs/dist');
 
         if (existsSync(distDir)) {
           if (!existsSync(outputDir)) {
