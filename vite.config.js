@@ -11,12 +11,12 @@ export default defineConfig({
       writeBundle() {
         const distDir = resolve(__dirname, 'dist');
         const outputDir = resolve(__dirname, 'output/dist');
-        
+
         if (existsSync(distDir)) {
           if (!existsSync(outputDir)) {
             mkdirSync(outputDir, { recursive: true });
           }
-          
+
           const files = ['missile.js', 'h265webjs-v20221106.js', 'missile-v20221120.wasm'];
           files.forEach(file => {
             const srcPath = resolve(distDir, file);
@@ -30,6 +30,6 @@ export default defineConfig({
     }
   ],
   build: {
-    outDir: 'output'
+    outDir: 'docs'
   }
 });
