@@ -11,9 +11,9 @@ export default defineConfig({
       writeBundle() {
         const distDir = resolve(__dirname, 'dist');
         const outputDir = resolve(__dirname, 'docs');
-        
+
         if (existsSync(distDir)) {
-          const files = ['missile.js', 'h265webjs-v20221106.js', 'missile-v20221120.wasm'];
+          const files = ['missile.js', 'h265webjs-v20221106.js', 'missile-v20221120.wasm', 'missile.wasm', 'h265webjs.js'];
           files.forEach(file => {
             const srcPath = resolve(distDir, file);
             const destPath = resolve(outputDir, file);
